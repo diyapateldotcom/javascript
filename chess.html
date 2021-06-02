@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <head> 
+ </head>
+ <body>
+    <script>
+        var rows=8, cols=8,count=1;
+        document.write("<center><table border='1' width=60%>");
+	    for(var i=1; i<=rows; i++){
+		if(i%2!=0){
+	            document.write("<tr height='65px' bgcolor='white'>");
+	             for(var j=1; j<=cols; j++){
+		               if(j%2==0){
+		               document.write("<td bgcolor='black'>"+count+"</td>");
+		               count++;
+		              }
+		            else{
+		               document.write("<td></td>");
+					   }
+		        }
+		        document.write("</tr>");
+		       }
+		else{
+		     document.write("<tr height='65px'>");
+	             for(var j=1; j<=cols; j++){
+		               if(j%2!=0){
+		               document.write("<td bgcolor='black'>"+count+"</td>");
+		               count++;
+		              }
+		            else{
+		               document.write("<td></td>");
+					   }
+		        }
+		        document.write("</tr>");
+		    }
+		}
+		      document.write("</table></center>");
+			
+    </script>
+	</body>
+</html>
